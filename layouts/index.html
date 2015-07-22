@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+		<main id="content">
+
+        {{ range where .Site.Pages "Type" "home" }}
+            <article id="{{ .Slug }}" class="{{ .Type }}">
+            {{ .Content }}
+            </article>
+        {{ end }}
+
+		</main>
+{{ partial "footer.html" . }}
