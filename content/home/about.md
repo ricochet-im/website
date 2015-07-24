@@ -6,10 +6,11 @@ title = "Ricochet"
 ## Anonymous instant messaging for **real** privacy
 Ricochet is a different approach to instant messaging that **doesn't trust anyone** in protecting your privacy.
 
-* *Eliminate metadata*. Nobody should know who you talk to or what you say.
+* *Eliminate metadata*. Nobody knows who you are, who you talk to, or what you say.
 * *Stay anonymous*. Share what you want, without sharing your identity and location.
-* *Nobody in the middle*. There are no central servers to monitor, censor, or compromise.
+* *Nobody in the middle*. There are no servers to monitor, censor, or hack.
 * *Safe by default*. Security isn't secure until it's automatic and easy to use.
+
 
 ### Get started
 
@@ -23,29 +24,28 @@ The latest version is **1.1.0** (April 10, 2015). You can also [build from sourc
 
 ### How it works
 
-Ricochet is a peer-to-peer instant messaging system built on Tor [hidden services](https://www.torproject.org/docs/hidden-services.html.en).  Your login is your hidden service address, and contacts connect to you (not an intermediate server) through Tor. The rendezvous system makes it extremely hard for anyone to learn your identity from your address.
+Ricochet uses the [Tor network](https://www.torproject.org/about/overview.html.en) to reach your contacts without relying on messaging servers. It creates a [hidden service](https://www.torproject.org/docs/hidden-services.html.en), which is used to rendezvous with your contacts without revealing your location or IP address.
 
-For more information, you can [read about Tor](https://www.torproject.org/about/overview.html.en) and [learn about Ricochet's design](https://github.com/ricochet-im/ricochet/blob/master/doc/design.md).
+Instead of a username, you get a unique address that looks like `ricochet:rs7ce36jsj24ogfw`. <br>
+Other Ricochet users can use this address to send a *contact request* - asking to be added to your contacts list.
 
-##### Metadata
+You can see when your contacts are online, and send them messages (and soon, files!). Your list of contacts is only known to your computer - never exposed to servers or network traffic monitoring.
 
-Traditionally, instant messaging needs a server between you and and the people you talk to. That server is responsible for remembering your contacts, telling you when they're online, and forwarding your messages.
+Everything is encrypted *end-to-end*, so only the intended recipient can decrypt it, and anonymized, so nobody knows where it's going and where it came from.
 
-The server learns a lot about you - *who you are, who you talk to, when you're online*. We call this metadata. Without end-to-end encryption, it can also read content - *everything you say, and everything said to you*.
+For more information, you can [read about Tor](https://www.torproject.org/about/overview.html.en) and learn more about [Ricochet's design](https://github.com/ricochet-im/ricochet/blob/master/doc/design.md).
 
-##### Anonymity
+### Be careful
 
+Ricochet is an experiment. Security and anonymity are difficult topics, and you should carefully evaluate your risks and exposure with any software.
 
-##### End-to-end
-
-
-##### Usability
+We're working on auditing, reviewing, and always improving Ricochet (and we'd love more help). There will be problems. We hope to do better than most, but please, *don't risk your safety* any more than necessary.
 
 ### How to help
 Bugs and features should be discussed on the [issue tracker](https://github.com/ricochet-im/ricochet/issues). Translations can be contributed on [Transifex](https://www.transifex.com/projects/p/ricochet/). Patches are accepted and encouraged on GitHub or by email.
 
 Ricochet is maintained by John Brooks, who can be reached at:
 
-`ricochet:rs7ce36jsj24ogfw` or `john.brooks@dereferenced.net` (<a href="/john-brooks.asc">pgp</a>).
+`ricochet:rs7ce36jsj24ogfw` or `john.brooks@dereferenced.net` ([pgp](/john-brooks.asc)).
 
 You should support [The Tor Project](https://www.torproject.org/donate/donate.html.en), [EFF](https://www.eff.org/), and [run a Tor relay](https://www.torproject.org/docs/tor-relay-debian.html.en).
