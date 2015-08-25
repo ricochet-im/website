@@ -1,4 +1,3 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "https://ricochet.im/"
 languageCode = "en-us"
 title = "Ricochet"
-canonifyurls = true
