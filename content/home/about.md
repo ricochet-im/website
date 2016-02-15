@@ -15,12 +15,12 @@ Ricochet is a different approach to instant messaging that **doesn't trust anyon
 ### Get started
 
 <div>
-<a id="download-btn" href="/releases/1.1.1/Ricochet-1.1.1.exe"><i class="icon-download"></i> Windows</a>
-<a id="download-btn" href="/releases/1.1.1/Ricochet-1.1.1.dmg"><i class="icon-download"></i> Mac</a>
-<a id="download-btn" href="/releases/1.1.1/"><i class="icon-download"></i> Linux</a>
+<a id="download-btn" href="/releases/1.1.2/Ricochet-1.1.2.exe"><i class="icon-download"></i> Windows</a>
+<a id="download-btn" href="/releases/1.1.2/Ricochet-1.1.2.dmg"><i class="icon-download"></i> Mac</a>
+<a id="download-btn" href="/releases/1.1.2/"><i class="icon-download"></i> Linux</a>
 </div>
 
-The latest version is **1.1.1** (September 9, 2015). You can also [build from source](https://github.com/ricochet-im/ricochet/blob/master/BUILDING.md).
+The latest version is **1.1.2** (February 15, 2016). You can also [build from source](https://github.com/ricochet-im/ricochet/blob/master/BUILDING.md).
 
 ### How it works
 
