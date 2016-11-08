@@ -11,7 +11,7 @@ Ricochet is a different approach to instant messaging that **doesn't trust anyon
 * *Nobody in the middle*. There are no servers to monitor, censor, or hack.
 * *Safe by default*. Security isn't secure until it's automatic and easy to use.
 
-![Screenshot](ricochetscreen.png)
+![Screenshot](/ricochetscreen.png)
 
 
 ### Get started
