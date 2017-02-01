@@ -10,19 +10,19 @@ Once you've downloaded Ricochet, it's a good idea to **verify** your download. D
 
 ## Mac
 
-First, head over to [Ricochet's latest releases page](https://ricochet.im/releases/latest/). If you haven't already, download the DMG file. It will be something like `ricochet-1.1.4.1-macos.dmg`. While you're there, also download the corresponding `.asc` file. For v. 1.1.4.1, the `.asc` file is `ricochet-1.1.4.1-macos.dmg.asc`. This is the digital signature file that Ricohet's developer, John Brooks, created when he uploaded this particular release of Ricochet. 
+First, head over to [Ricochet's latest releases page](https://ricochet.im/releases/latest/). If you haven't already, download the DMG file. It will be called something like `ricochet-1.1.4.1-macos.dmg`. While you're there, also download the corresponding `.asc` file. For v. 1.1.4.1, the `.asc` file is `ricochet-1.1.4.1-macos.dmg.asc`. This is the digital signature file that Ricochet's developer, John Brooks, created when he uploaded this particular release of Ricochet. 
 
 Ensure that both the `dmg` file and the `asc` file are in the same folder, like your Downloads folder.
 
 ### Using a GUI Application
 
-First, download [GPG Suite](https://gpgtools.org/). 
+First, download and install [GPG Suite](https://gpgtools.org/). 
 
-In the folder where you have the `dmg` and `asc` files, right-click the `.asc` file and go to `Services` > `OpenPGP: Validate`. If the resulting pop-up screen says "Signed by John Brooks <john.brooks@dereferenced.net> (183C045D) - undefined trust" that means your download has not been tampered with since John signed it with his GPG key. 
+In the folder where you have the `dmg` and `asc` files, right-click the `.asc` file and go to `Services` and click on `OpenPGP: Validate`. If the resulting pop-up screen says `Signed by John Brooks <john.brooks@dereferenced.net> (183C045D) - undefined trust` that means your download has not been tampered with since John signed it with his GPG key. 
 
 ### Using the Terminal
 
-Navigate to the directory with the `dmg` and `asc` files-- if it's in your Downloads directory, run `cd ~/Downloads`. Now run `gpg2 --verify ricochet-1.1.4.1-macos.dmg.asc`. If the resulting output is:
+Navigate to the directory with the `dmg` and `asc` files-- if it's in your Downloads directory, run `cd ~/Downloads`. Now run `gpg2 --verify ricochet-1.1.4.1-macos.dmg.asc`, filling in the appropriate version. If the resulting output is:
 
 ```
 gpg: Good signature from "John Brooks <john.brooks@dereferenced.net>" [unknown]
@@ -40,7 +40,7 @@ We're going to be using the Terminal.
 
 First, head over to [Ricochet's latest releases page](https://ricochet.im/releases/latest/). If you haven't already, download the appropriate `tar.bz2` file. If you're running Linux on a 64-bit machine, you'll want the `linux-x86_64.tar.bz2` file. If 32-bit, go for `linux-i686.tar.bz2`.
 
-While you're there, also download the corresponding `.asc` file. It'll have the same file name as the `tar.bz2` file you downloaded, except with `.asc` at the end. This is the digital signature file that Ricohet's developer, John Brooks, created when he uploaded this particular release of Ricochet. 
+While you're there, also download the corresponding `.asc` file. It'll have the same file name as the `tar.bz2` file you downloaded, except with `.asc` at the end. This is the digital signature file that Ricochet's developer, John Brooks, created when he uploaded this particular release of Ricochet. 
 
 Ensure that both the `tar.bz2` file and the `asc` file are in the same folder, like your Downloads folder. Navigate to this directory in your Terminal (if it's in your Downloads directory, run `cd ~/Downloads`). Now run `gpg2 --verify ricochet-1.X.X-linux-XXXXX.tar.bz2.asc`, filling in your version for the Xs. If the resulting output is:
 
